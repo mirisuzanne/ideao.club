@@ -2,8 +2,15 @@
 // ======
 
 @keyframes edit {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0%,
+  20% {
+    opacity: 0;
+  }
+
+  80%,
+  100% {
+    opacity: 1;
+  }
 }
 
 html,
@@ -37,8 +44,8 @@ body {
   display: flex;
 
   &:before {
-    animation: edit 30s linear alternate infinite;
-    background: #f00 url('../pics/eotm-edit.jpg') no-repeat fixed center;
+    animation: edit 15s linear alternate infinite;
+    background: url('../pics/eotm-edit.jpg') no-repeat fixed center;
     background-clip: content-box;
     background-size: cover;
     bottom: 0;
