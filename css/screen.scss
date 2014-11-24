@@ -1,0 +1,82 @@
+// Screen
+// ======
+
+@keyframes edit {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+html,
+body,
+h1,
+p {
+  display: block;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background: #000 url('../pics/eotm.jpg') no-repeat fixed center;
+  background-size: cover;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 200%;
+  line-height: 1.5;
+  position: relative;
+  text-shadow: 0 0 .25rem #000;
+}
+
+body {
+  align-items: stretch;
+  display: flex;
+
+  &:before {
+    animation: edit 30s linear alternate infinite;
+    background: #f00 url('../pics/eotm-edit.jpg') no-repeat fixed center;
+    background-clip: content-box;
+    background-size: cover;
+    bottom: 0;
+    content: ' ';
+    left: 0;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+}
+
+a {
+  &:link,
+  &:visited {
+    color: #ccf;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.brand {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
