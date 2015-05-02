@@ -29,7 +29,7 @@ body {
 }
 
 html {
-  background: #000 url('../pics/eotm.jpg') no-repeat fixed center;
+  background: #000 url('../pics/eotm.jpg') no-repeat fixed top center;
   background-size: cover;
   color: #fff;
   font-family: sans-serif;
@@ -45,7 +45,7 @@ body {
 
   &:before {
     animation: edit 15s linear alternate infinite;
-    background: url('../pics/eotm-edit.jpg') no-repeat fixed center;
+    background: url('../pics/eotm-edit.jpg') no-repeat fixed top center;
     background-clip: content-box;
     background-size: cover;
     bottom: 0;
